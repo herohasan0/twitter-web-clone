@@ -2,8 +2,7 @@ import React from 'react';
 import Button from '../components/button';
 
 export default {
-  title: 'Button',
-  component: Button,
+  title: 'Buttons',
 };
 
-export const Normalbtn = () => <Button>Click me!</Button>;
+export const Normal = () => <Button>Click me!</Button>;
