@@ -1,0 +1,7 @@
+.navButton {
+  background-color: black;
+  color: white;
+  svg {
+    color: red;
+  }
+}
