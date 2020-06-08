@@ -3,19 +3,30 @@ import React from 'react';
 import Button from '../components/button';
 import NavigationButton from '../components/navigation-button';
 import Navigation from '../components/navigation';
-import TitleBold from '../components/title-bold';
+import TextTitle from '../components/text-title';
 import { Home } from '../components/icons';
+import ThemeButton from '../components/theme-button';
+import Stack from '../components/stack';
 
 export default {
   title: 'Buttons',
 };
 
 export const Normal = () => <Button>Click me!</Button>;
+export const Theme = () => (
+  <Stack gap={20} column>
+    <ThemeButton>Tweet</ThemeButton>
+    <ThemeButton full>Tweet Full</ThemeButton>
+    <ThemeButton full big>
+      Tweet Full Big
+    </ThemeButton>
+  </Stack>
+);
 
 export const NavButton = () => (
   <NavigationButton>
     <Home />
-    <TitleBold>Home</TitleBold>
+    <TextTitle>Home</TextTitle>
   </NavigationButton>
 );
 
