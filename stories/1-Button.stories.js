@@ -1,4 +1,5 @@
 import React from 'react';
+import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 
 import Button from '../components/button';
 import NavigationButton from '../components/navigation-button';
@@ -10,6 +11,7 @@ import Stack from '../components/stack';
 
 export default {
   title: 'Buttons',
+  decorators: [withKnobs],
 };
 
 export const Normal = () => <Button>Click me!</Button>;
@@ -30,4 +32,7 @@ export const NavButton = () => (
   </NavigationButton>
 );
 
-export const Nav = () => <Navigation selectedKey="home" />;
+export const Nav = () => {
+  const flat = boolean('Flat', false);
+  return <Navigation flat={flat} selectedKey="home" />;
+};

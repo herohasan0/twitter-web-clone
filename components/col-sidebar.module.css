@@ -1,0 +1,25 @@
+.sidebar {
+  /* background-color: #ece; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (--d) {
+    align-items: flex-start;
+  }
+}
+
+.profile {
+  margin-top: auto;
+}
+
+.tweet {
+  margin-top: 16px;
+  margin-bottom: 20px;
+
+  @media (--d) {
+    width: 100%;
+  }
+}
